@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMINIX - Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i.ibb.co/yYb9rBt/Whats-App-Image-2024-09-29-at-11-55-14-AM-removebg-preview.png" alt="LUMINIX Logo">
+            <sup><sup></sup>LUMINIX</sup><sup></sup>
+        </div>
+    </header>
+
+    <!-- Formulario para "SER CLIENTE" -->
+    <div class="register-container" style="background-image: url('tu-imagen-de-fondo.jpg');">
+        <form class="register-form" id="registerForm">
+            <h2>Registro Cliente</h2>
+            <input type="text" name="nombres" placeholder="Nombres" required>
+            <input type="text" name="apellidos" placeholder="Apellidos" required>
+            <input type="date" name="fecha_nacimiento" required>
+            <input type="email" name="correo" placeholder="Correo Electrónico" required>
+            <input type="password" name="contrasena" placeholder="Contraseña" required>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nombres = event.target.nombres.value;
+            const apellidos = event.target.apellidos.value;
+    
+            // Guardar el nombre completo en localStorage para usarlo en la página de inicio
+            localStorage.setItem('usuario', `${nombres} ${apellidos}`);
+    
+            // Redirigir a la página de inicio.html
+            window.location.href = "inicio.html";
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+    
+
+    

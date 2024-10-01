@@ -1,0 +1,512 @@
+/* Reseteo básico de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', cursive; /* Cambié la fuente aquí */
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #f56a00;
+}
+
+.btn-contacto {
+    background-color: #f56a00;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.hero {
+    background-image: url(https://www.shutterstock.com/image-photo/lush-rice-paddy-field-neat-600nw-2499404003.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    line-height: 1.3;
+}
+
+.hero .btn {
+    background-color: #f56a00;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.hero .btn:hover {
+    background-color: #e05600;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.role-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Espacio entre los botones */
+}
+
+.btn-cliente, .btn-asesor {
+    background-color: #f56a00; /* Color del fondo del botón */
+    color: white; /* Color del texto */
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cliente:hover, .btn-asesor:hover {
+    background-color: #e05600; /* Color cuando el cursor pasa sobre los botones */
+}
+/* Estilos para centrar el formulario de registro */
+.registro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.registro-container h2 {
+    margin-bottom: 20px;
+}
+
+.registro-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+.registro-container input {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.registro-container .btn {
+    background-color: #ef6807;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.registro-container .btn:hover {
+    background-color: #06118e;
+}
+
+.opciones-login {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.btn-social {
+    background-color: #0b378f; /* Azul de Facebook */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#google-btn {
+    background-color: #ef6807; /* Rojo de Google */
+}
+
+.btn-social:hover {
+    opacity: 0.8;
+}
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://www.shutterstock.com/image-photo/lush-rice-paddy-field-neat-600nw-2499404003.jpg); /* Cambia esta URL por la imagen que desees */
+    background-size: cover;
+    background-position: center;
+}
+
+.register-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-box input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.register-box button {
+    width: 100%;
+    background-color: #f56a00;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-box button:hover {
+    background-color: #e05600;
+}
+/* Mantener el diseño centrado y evitar compresión */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.register-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Mantener el fondo ligeramente translúcido */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.register-form h2 {
+    margin-bottom: 20px;
+}
+
+.register-form input,
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.register-form .cv-upload {
+    margin-top: 20px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Espacio a la izquierda del buscador */
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px; /* Ancho del input */
+}
+
+.search-button {
+    background-color: #f56a00; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 8px; /* Espacio entre el input y el botón */
+    cursor: pointer;
+}
+.search-button:hover {
+    background-color: #e05600; /* Color de fondo al pasar el mouse */
+}
+/* Estilos para el fondo del apartado de knowledge */
+.knowledge-body {
+    background-image: url(https://www.shutterstock.com/image-photo/lush-rice-paddy-field-neat-600nw-2499404003.jpg); /* Reemplaza esto por la URL de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Hace que el fondo ocupe toda la altura de la pantalla */
+    margin: 0;
+    padding: 0;
+}
+
+.knowledge-content {
+    color: white; /* Cambia el color del texto para que sea legible sobre el fondo */
+    text-align: center;
+    padding: 50px;
+}
+/* General styles for form container */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f9; /* Light background */
+}
+
+.register-container form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow to the form */
+    width: 400px; /* Controls the form width */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for the form elements */
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.register-container label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"],
+.register-container input[type="date"],
+.register-container input[type="file"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    font-size: 14px;
+}
+
+.register-container button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.register-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Responsive design */
+@media only screen and (max-width: 600px) {
+    .register-container form {
+        width: 90%; /* Flexible width for small screens */
+    }
+}
+body {
+    background-image: url(https://www.shutterstock.com/image-photo/lush-rice-paddy-field-neat-600nw-2499404003.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+button#connect-wallet {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button#connect-wallet:hover {
+    background-color: #0056b3;
+}
+
+.qr-section img {
+    width: 200px;
+    height: 200px;
+}
+/* Fondo de la página */
+body {
+    background-image: url('https://www.shutterstock.com/image-photo/lush-rice-paddy-field-neat-600nw-2499404003.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.usuario {
+    font-size: 16px;
+}
+
+/* Diseño de dos columnas */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.payment-methods, .promotions {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%; /* Cada columna ocupa el 45% del espacio */
+}
+
+.payment-methods h2, .promotions h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Promociones */
+.promo-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.promo-card img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.promo-card p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payment-methods, .promotions {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+/* Estilos para las tarjetas de Métodos de Pago */
+.payment-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilos para el input de wallet */
+.wallet-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+

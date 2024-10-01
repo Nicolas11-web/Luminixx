@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido - LUMINIX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i.ibb.co/yYb9rBt/Whats-App-Image-2024-09-29-at-11-55-14-AM-removebg-preview.png" alt="LUMINIX Logo">
+            <sup>LUMINIX</sup>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="knowledge.html">Ir a la Maqueta de Intercambio</a></li>
+            </ul>
+        </nav>
+        <div class="usuario">
+            <span id="usuarioNombre"></span>
+        </div>
+    </header>
+
+    <!-- Sección principal con dos columnas -->
+    <section class="main-content">
+       <!-- Métodos de Pago (Columna izquierda) -->
+<div class="payment-methods">
+    <h2>Métodos de Pago</h2>
+    
+    <!-- Tarjeta para N° de cuenta -->
+    <div class="payment-card">
+        <p><strong>N° de cuenta:</strong> 57095279071038</p>
+    </div>
+
+    <!-- Tarjeta para Banco -->
+    <div class="payment-card">
+        <p><strong>Banco:</strong> Banco BCP</p>
+    </div>
+
+    <!-- Tarjeta para YAPE -->
+    <div class="payment-card">
+        <p><strong>YAPE:</strong> 907059694</p>
+    </div>
+
+    <!-- Tarjeta para ingresar el número de wallet -->
+    <div class="payment-card">
+        <p><strong>Ingresa tu Wallet:</strong></p>
+        <input type="text" placeholder="Número de Wallet" class="wallet-input">
+    </div>
+</div>
+
+        <!-- Promociones (Columna derecha) -->
+        <div class="promotions">
+            <h2>Promociones</h2>
+            <div class="promo-card">
+                <img src="https://i.ibb.co/yYb9rBt/Whats-App-Image-2024-09-29-at-11-55-14-AM-removebg-preview.png" alt="Logo Token">
+                <p>S/15 x 10 LUM</p>
+            </div>
+            <div class="promo-card">
+                <img src="https://i.ibb.co/yYb9rBt/Whats-App-Image-2024-09-29-at-11-55-14-AM-removebg-preview.png" alt="Logo Token">
+                <p>S/30 x 25 LUM</p>
+            </div>
+            <div class="promo-card">
+                <img src="https://i.ibb.co/yYb9rBt/Whats-App-Image-2024-09-29-at-11-55-14-AM-removebg-preview.png" alt="Logo Token">
+                <p>S/50 x 40 LUM</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Obtenemos el nombre del usuario desde localStorage y lo mostramos en la página
+        const usuarioNombre = localStorage.getItem('usuario');
+        if (usuarioNombre) {
+            document.getElementById('usuarioNombre').textContent = `Bienvenido, ${usuarioNombre}`;
+        }
+    </script>
+</body>
+</html>
